@@ -1,0 +1,11 @@
+{
+  "name": "hapi-ham",
+  "version": "1.0.0",
+  "description": "hapi answering machine",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "",
+  "license": "ISC"
+}
