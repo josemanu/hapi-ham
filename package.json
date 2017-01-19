@@ -1,14 +1,19 @@
 {
   "name": "hapi-ham",
-  "version": "1.2.3",
+  "version": "1.3.0",
   "description": "hapi answering machine",
   "main": "lib/index.js",
   "scripts": {
-    "test": ""
+    "test": "lab -c -v -S -m 20000"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "wreck": "^10.0.0"
+  },
+  "devDependencies": {
+    "code": "^4.0.0",
+    "kaiwa": "^0.1.0",
+    "lab": "^11.2.2"
   }
 }
