@@ -32,12 +32,10 @@ server.register({
     method: ['POST', 'GET'],
     path: '/',
     handler: function (request, reply) {
-      const template = {
-        message: {
-          text: 'Hello ham!'
-        }
+      const myMessage = {
+        text: 'Hello ham!'
       }
-      return reply.message(template)
+      return reply.message(myMessage)
     }
   })
 
