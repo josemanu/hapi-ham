@@ -11,6 +11,7 @@ const Hapi = require('hapi');
 // Create a server with a host and port
 const server = new Hapi.Server();
 server.connection({
+  host: 'localhost',
   port: 8000
 });
 
@@ -19,7 +20,8 @@ server.register({
   register: require('hapi-ham'),
   options: {
     provider: 'facebook-messenger',
-    access_token: '<FB TOKEN>'
+    access_token: '<facebook_page_token>'
+    //debug: true
   }
 }, (err) => {
 
@@ -32,10 +34,10 @@ server.register({
     method: ['POST', 'GET'],
     path: '/',
     handler: function (request, reply) {
-      const myMessage = {
-        text: 'Hello ham!'
+      const template = {
+        text: `Received message: ${request.event.message.text}`
       }
-      return reply.message(myMessage)
+      return reply.message(template)
     }
   })
 
