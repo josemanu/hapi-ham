@@ -8,7 +8,7 @@ const Code = require('code')
 const expect = Code.expect
 
 
-lab.experiment('conversation', () => {
+lab.experiment('facebook messenger', () => {
 
     const server = new Hapi.Server()
     server.connection({ port: 3000 })
