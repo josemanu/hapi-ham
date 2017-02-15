@@ -6,7 +6,15 @@
   "scripts": {
     "test": "lab -c -v -S -m 20000"
   },
-  "author": "",
+  "author": {
+    "name": "José De Paz",
+    "email": "jose@yalochat.com",
+    "url": "http://github.com/josedepaz/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/josedepaz/hapi-ham.git"
+  },
   "license": "ISC",
   "dependencies": {
     "wreck": "^10.0.0"
