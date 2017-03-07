@@ -17,11 +17,21 @@
   },
   "license": "ISC",
   "dependencies": {
+    "boom": "^4.2.0",
+    "bucker": "^1.1.1",
+    "hoek": "^4.1.0",
     "wreck": "^10.0.0"
   },
   "devDependencies": {
     "code": "^4.0.0",
+    "dotenv": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-nodemon": "^2.0.3",
+    "gulp-watch": "^4.3.5",
     "kaiwa": "^0.1.0",
-    "lab": "^11.2.2"
+    "lab": "^11.2.2",
+    "nodemon": "^1.x.x",
+    "require-dir": "^0.3.1"
   }
 }
